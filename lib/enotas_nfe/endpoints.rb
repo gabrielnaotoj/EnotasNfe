@@ -60,7 +60,7 @@ module EnotasNfe
 
     ## rotas para nota fiscal de serviço
     def nfse_list(firm_id, body = {})
-      get("empresas/#{firm_id}/nfes", body)
+      post("empresas/#{firm_id}/nfes", body)
     end
 
     def nfse_create(firm_id, body)
